@@ -70,3 +70,6 @@ body {
   }
 }
 
+.Card:hover {
+  height: 50vw;
+}
