@@ -16,7 +16,7 @@ body {
   background-color: #1d212b;
 }
 
-div {
+.Card {
   border-radius: 20px;
   position: relative;
   margin: 40px;
@@ -28,7 +28,7 @@ div {
   background-color: #151823;
   animation: textColor 10s ease infinite;
 }
-div:after {
+.Card:after {
   position: absolute;
   content: "";
   top: 5px;
@@ -69,3 +69,4 @@ div:after {
     color: #7e0fff;
   }
 }
+
