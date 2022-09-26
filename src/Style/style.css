@@ -27,6 +27,8 @@ body {
   color: #252B37;
   background-color: #151823;
   animation: textColor 10s ease infinite;
+  border: solid 3px;
+  border-style: double ;
 }
 .Card:after {
   position: absolute;
@@ -71,5 +73,24 @@ body {
 }
 
 .Card:hover {
+  
+  animation-delay: 2s;
   height: 50vw;
+}
+
+.Card:hover .CardDescription{
+  display: block;
+  box-sizing: border-box;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.CardDescription{
+  display: none;
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 100%;
+  height: 46%;
+  box-sizing: border-box;
 }
