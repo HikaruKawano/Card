@@ -82,7 +82,7 @@ body {
   transition: transform 2s;
 }
 .Card:hover  .CardDescription{
-  animation: moveToRight 2s normal;
+  animation: moveToRight 2s forwards;
   animation-delay: 2s;
 
 }
@@ -98,7 +98,7 @@ body {
 
 .CardContainer{
   display: block;
-  background-color: aliceblue;
+  background-color: blue;
   font-size: 1.5rem;
   font-weight: 300;
   width: 100%;
@@ -108,6 +108,7 @@ body {
   border-radius: 20px;
   z-index: 10;
   position: absolute;
+
 }
 
 .CardDescription{
@@ -116,4 +117,39 @@ background-color: red;
 width: 100%;
 height: 100%;
 border-radius: 20px;
+}
+
+.CardClick{
+  z-index: 20;
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  display: flex;
+  
+}
+
+.CardClick .CardContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 10;
+}
+.CardClick::after{
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  /* right: -40px; */
+  z-index: -1;
+  height: 100%;
+  width: 90vw;
+  margin: 0 auto;
+  transform: scale(0.93);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(5vw);
+  filter: blur(5vw);
+  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background-size: 400% 400%;
+  animation: animateGlow 10s ease infinite;
+  
 }
