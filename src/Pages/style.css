@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -22,13 +24,14 @@ body {
   margin: 40px;
   width: 35vw;
   height: 25vw;
-  line-height: 25vw;
   text-align: center;
   color: #252B37;
   background-color: #151823;
   animation: textColor 10s ease infinite;
   border: solid 3px;
   border-style: double ;
+  display: flex;
+  align-items: center;
 }
 .Card:after {
   position: absolute;
@@ -48,6 +51,7 @@ body {
   background: linear-gradient(270deg, #0fffc1, #7e0fff);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
+  
 }
 @keyframes animateGlow {
   0% {
@@ -73,24 +77,40 @@ body {
 }
 
 .Card:hover {
-  
   animation-delay: 2s;
-  height: 50vw;
+  transform: rotate(90deg);
+  transition: transform 2s;
+}
+.Card:hover  .CardDescription{
+  animation: moveToRight 2s normal;
+  animation-delay: 2s;
+
 }
 
-.Card:hover .CardDescription{
+@keyframes moveToRight {
+  0% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(00px);
+  }
+}
+
+.CardContainer{
   display: block;
-  box-sizing: border-box;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.CardDescription{
-  display: none;
   background-color: aliceblue;
   font-size: 1.5rem;
   font-weight: 300;
   width: 100%;
-  height: 46%;
+  height: 100%;
   box-sizing: border-box;
+  border-radius: 20px;
+  border-radius: 20px;
+  z-index: 10;
+  position: absolute;
+}
+
+.CardDescription{
+z-index: 9;
+background-color: red;
 }
