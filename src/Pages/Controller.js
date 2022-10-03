@@ -1,16 +1,19 @@
 var click = 0;
-function CardClick(){
+function CardClick(card){
   click = click + 1;
   console.log(click);
-
-  if( click == 1 ){
-    document.getElementById('card').classList.add('CardClick');
-    document.getElementById('card').classList.remove('Card');
-  }else if( click == 2){
-    document.getElementById('card').classList.remove('CardClick');
-    document.getElementById('card').classList.add('Card');
-    click = 0;
+  console.log(card);
+  if( card == "card1"){
+    if( click == 1 ){
+      document.getElementById('card1').classList.add('CardClick');
+      document.getElementById('card1').classList.remove('Card');
+    }else if( click == 2){
+      document.getElementById('card1').classList.remove('CardClick');
+      document.getElementById('card1').classList.add('Card');
+      click = 0;
+    }
   }
+  
 }
 
 

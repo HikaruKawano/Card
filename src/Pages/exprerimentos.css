@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display:flex;
+  margin:0;
+  padding:0;
+  min-height: 100vh;
+  background: #444;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+}
+
+.container{
+  box-shadow:
+    inset 0 0 20px whitesmoke,
+    inset 10px 0 30px #f0f,
+    inset -10px 0 30px #0ff,
+    inset 10px 0 100px #f0f,
+    inset -10px 0 100px #0ff,
+    0 0 20px #fff,
+    -5px 0 40px #f0f,
+    5px 0 40px #0ff;
+   
+}
+
+.text-container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.Texto{
+  text-align: justify;
+  margin-top: 105px;
+  margin-bottom: 105px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
