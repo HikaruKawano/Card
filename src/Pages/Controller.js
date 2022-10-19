@@ -1,19 +1,35 @@
-var click = 0;
-function CardClick(card){
-  click = click + 1;
-  console.log(click);
-  console.log(card);
-  if( card == "card1"){
-    if( click == 1 ){
-      document.getElementById('card1').classList.add('CardClick');
-      document.getElementById('card1').classList.remove('Card');
-    }else if( click == 2){
-      document.getElementById('card1').classList.remove('CardClick');
-      document.getElementById('card1').classList.add('Card');
-      click = 0;
+
+
+$(document).ready(function () {
+
+  $('#select').change(function () {
+
+    var es = document.getElementById('select');
+
+    esValor = es.options[es.selectedIndex].value;
+    console.log(esValor);
+
+    if (esValor == 2 ) {
+      document.getElementById("text-Portugues").style.display = "block";
+      document.getElementById("text-Ingles").style.display = "none";
+      document.getElementById("text-Espanhol").style.display = "none";
     }
-  }
-  
-}
+    if (esValor == 0) {
+      document.getElementById("text-Portugues").style.display = "none";
+      document.getElementById("text-Ingles").style.display = "block";
+      document.getElementById("text-Espanhol").style.display = "none";
+    }
+    if (esValor == 1) {
+      document.getElementById("text-Portugues").style.display = "none";
+      document.getElementById("text-Ingles").style.display = "none";
+      document.getElementById("text-Espanhol").style.display = "block";
+    }
+  });
+
+});
+
+
+
+
 
 
