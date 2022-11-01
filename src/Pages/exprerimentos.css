@@ -1,13 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  display:flex;
-  margin:0;
-  padding:0;
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   background: #444;
   justify-content: center;
@@ -15,50 +15,40 @@ body{
   font-family: arial;
 }
 
-.container{
+.container {
   width: 75%;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 15px;
-  box-shadow:
-     0 0 20px whitesmoke,
-     10px 0 30px #f0f,
-     -10px 0 30px #0ff,
-     10px 0 100px #f0f,
-     -10px 0 100px #0ff,
-    0 0 20px #fff,
-    -5px 0 40px #f0f,
+  box-shadow: 0 0 20px whitesmoke, 10px 0 30px #f0f, -10px 0 30px #0ff,
+    10px 0 100px #f0f, -10px 0 100px #0ff, 0 0 20px #fff, -5px 0 40px #f0f,
     5px 0 40px #0ff;
-   
 }
 
-.menu-top{
+.menu-top {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-a{
+a {
   color: white;
   list-style: none;
   text-decoration: none;
 }
 
-select{
-  
+select {
 }
 
-.text-container{
+.text-container {
   display: flex;
   justify-content: center;
-  
 }
 
-.Texto{
+.Texto {
   text-align: justify;
   margin-top: 105px;
   margin-bottom: 105px;
@@ -66,26 +56,19 @@ select{
   margin-right: 150px;
 }
 
-select{
+select {
   height: 30px;
   border: none;
   transform: translateY(0);
-  box-shadow:
-    inset 0 0 15px whitesmoke,
-    inset 20px 0 20px #f0f,
-    inset -20px 0 20px #0ff,
-    inset 20px 0 100px #f0f,
-    inset -20px 0 100px #0ff,
-    0 0 20px #fff,
-    -10px 0 20px #f0f,
-    10px 0 20px #0ff;
+  box-shadow: inset 0 0 15px whitesmoke, inset 20px 0 20px #f0f,
+    inset -20px 0 20px #0ff, inset 20px 0 100px #f0f, inset -20px 0 100px #0ff,
+    0 0 20px #fff, -10px 0 20px #f0f, 10px 0 20px #0ff;
   outline: none;
   color: #fff;
-  padding-left: 4.0rem;
+  padding-left: 4rem;
 }
 
-option{
+option {
   color: black;
-  background-color: #BE62FE;
-
+  background-color: #be62fe;
 }
